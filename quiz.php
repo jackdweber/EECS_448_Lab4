@@ -12,4 +12,7 @@
     }
 
     echo "Number of answers correct: ".$correct_count;
+    echo "<br />Percentage: ";
+    echo ($correct_count / 5) * 100;
+    echo "%";
 ?>
