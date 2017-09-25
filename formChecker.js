@@ -37,7 +37,8 @@ function validateForm(){
             error_string = error_string + error[e];
         }
         alert(error_string)
+        return false
     }
 
-    return false
+    return true
 }
