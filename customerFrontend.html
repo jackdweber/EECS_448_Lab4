@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Howdy welcome to my store</h1>
+    <form action="customerBackend.php" method="POST">
+        <div>
+            <input type="text" name="user" placeholder="Username Here" id="">
+            <input type="password" name="pass" placeholder="SECRET KEY" id="">
+        </div>
+        <div>
+            <p>What we got for sale rn</p>
+            <input type="checkbox" name="watch" id="">Watch - $500 <br />
+            <input type="checkbox" name="phone" id="">Phone - $900 <br />
+            <input type="checkbox" name="pen" id="">Pen - $2 <br />
+        </div>
+        <div>
+            <p>And yur shippin'</p>
+            <select name="shippin" id="">
+                <option value="7">Freeee 7 day</option>
+                <option value="1">OVERNIGHT $50 FOR U</option>
+                <option value="3">$5 for the 3 day.</option>
+            </select>
+        </div>
+        <input type="reset" value="reset & ferget">
+        <input type="submit" value="BUY RN">
+    </form>
+</body>
+</html>
