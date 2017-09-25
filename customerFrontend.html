@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Full Stack Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Howdy welcome to my store</h1>
+    <h1>Howdy welcome to my Full Stack Store</h1>
     <form action="customerBackend.php" method="POST" onsubmit="return validateForm()">
         <div>
             <span>Enter some info here so we can get to know ya better.</span><br />
@@ -16,9 +17,9 @@
         </div>
         <div>
             <p>What we got for sale rn</p>
-            Watch: $200 <input type="number" name="q_watch" value="0">
-            Phone: $900 <input type="number" name="q_phone" value="0">
-            Pen: $2 <input type="number" name="q_pen" value="0">
+            Watch: $200 <input type="number" name="q_watch" value="0"><br />
+            Phone: $900 <input type="number" name="q_phone" value="0"><br />
+            Pen: $2 <input type="number" name="q_pen" value="0"><br />
         </div>
         <div>
             <p>And yur shippin'</p>
@@ -28,8 +29,8 @@
                 <option value="3">$5 for the 3 day.</option>
             </select>
         </div>
-        <input type="reset" value="reset & ferget">
-        <input type="submit" value="BUY RN">
+        <input type="reset" value="Reset & Forget">
+        <input type="submit" value="BUY">
     </form>
 
     <script src="formChecker.js"></script>
