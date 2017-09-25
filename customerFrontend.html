@@ -8,17 +8,17 @@
 </head>
 <body>
     <h1>Howdy welcome to my store</h1>
-    <form action="customerBackend.php" method="POST">
+    <form action="customerBackend.php" method="POST" onsubmit="return validateForm()">
         <div>
             <span>Enter some info here so we can get to know ya better.</span><br />
-            <input type="text" name="user" placeholder="Username Here" id="">
+            <input type="email" name="user" placeholder="Username Here" id="">
             <input type="password" name="pass" placeholder="SECRET KEY" id="">
         </div>
         <div>
             <p>What we got for sale rn</p>
-            Watch: $200 <input type="number" name="q_watch">
-            Phone: $900 <input type="number" name="q_phone">
-            Pen: $2 <input type="number" name="q_pen">
+            Watch: $200 <input type="number" name="q_watch" value="0">
+            Phone: $900 <input type="number" name="q_phone" value="0">
+            Pen: $2 <input type="number" name="q_pen" value="0">
         </div>
         <div>
             <p>And yur shippin'</p>
@@ -29,7 +29,7 @@
             </select>
         </div>
         <input type="reset" value="reset & ferget">
-        <input type="submit" onsubmit="validateForm()" value="BUY RN">
+        <input type="submit" value="BUY RN">
     </form>
 
     <script src="formChecker.js"></script>
