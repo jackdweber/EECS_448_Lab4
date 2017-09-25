@@ -10,14 +10,15 @@
     <h1>Howdy welcome to my store</h1>
     <form action="customerBackend.php" method="POST">
         <div>
+            <span>Enter some info here so we can get to know ya better.</span><br />
             <input type="text" name="user" placeholder="Username Here" id="">
             <input type="password" name="pass" placeholder="SECRET KEY" id="">
         </div>
         <div>
             <p>What we got for sale rn</p>
-            <input type="checkbox" name="watch" id="">Watch - $500 <br />
-            <input type="checkbox" name="phone" id="">Phone - $900 <br />
-            <input type="checkbox" name="pen" id="">Pen - $2 <br />
+            Watch: $200 <input type="number" name="q_watch">
+            Phone: $900 <input type="number" name="q_phone">
+            Pen: $2 <input type="number" name="q_pen">
         </div>
         <div>
             <p>And yur shippin'</p>
@@ -28,7 +29,9 @@
             </select>
         </div>
         <input type="reset" value="reset & ferget">
-        <input type="submit" value="BUY RN">
+        <input type="submit" onsubmit="validateForm()" value="BUY RN">
     </form>
+
+    <script src="formChecker.js"></script>
 </body>
 </html>
