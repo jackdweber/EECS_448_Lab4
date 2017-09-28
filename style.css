@@ -13,3 +13,13 @@ form{
     width: 70%;
     color:white;
 }
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid pink;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+}
